@@ -1,3 +1,7 @@
+body {
+    background-color: var(--white);
+}
+
 :root {
     --blue: #1e90ff;
     --white: #ffffff;
@@ -39,26 +43,17 @@
     grid-area: footer;
     background-color: var(--green);
 }
-.container {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header header header header"
-    "main main sidebar"
-    "footer footer footer footer";
-}
 
 .my-element {
     height: 100px;
-    background-color: var(--blue);
+    background-color: var(--white);
     color: var(--white);
 }
 
 .my-element-animate {
     width: 30%;
     height: 50px;
-    background-color: var(--pink);
+    background-color: var(--white);
     animation: slideIn 3s ease-in-out;
 }
 
@@ -71,4 +66,19 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.btn-pagar {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-pagar:hover {
+    background-color: var(--pink);
+    cursor: pointer;
 }
